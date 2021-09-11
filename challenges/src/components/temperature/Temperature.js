@@ -20,14 +20,15 @@ function Temperature() {
     
     return(
         <div className="temperature">
-           <input 
-            type='number'
-            value={temperature} 
-            min={minTemp} 
-            placeholder='Temperature in C°'
-            onChange={(e) => setTemperature(e.target.value)} 
+            <h2>Temperature</h2>
+            <input 
+                type='number'
+                value={temperature} 
+                min={minTemp} 
+                placeholder='Temperature in C°'
+                onChange={(e) => setTemperature(e.target.value)} 
             /> 
-           <p style={{color: textColor}}>{message}</p>
+            <p style={{color: textColor}}>{message}</p>
         </div>
     )
 }
